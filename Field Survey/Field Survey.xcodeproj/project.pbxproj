@@ -13,6 +13,12 @@
 		E16BE26C219F77B2000FDF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16BE26A219F77B2000FDF96 /* LaunchScreen.storyboard */; };
 		E16BE277219F77B2000FDF96 /* Field_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BE276219F77B2000FDF96 /* Field_SurveyTests.swift */; };
 		E16BE282219F77B2000FDF96 /* Field_SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BE281219F77B2000FDF96 /* Field_SurveyUITests.swift */; };
+		E16BE291219F7E1E000FDF96 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = E16BE290219F7E1E000FDF96 /* field_observations.json */; };
+		E16BE299219F8A30000FDF96 /* ClassificaitonEventLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BE298219F8A30000FDF96 /* ClassificaitonEventLoader.swift */; };
+		E16BE29B219F8CD5000FDF96 /* ClassificationEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BE29A219F8CD5000FDF96 /* ClassificationEventViewController.swift */; };
+		E16BE29E219F8D5A000FDF96 /* ClassificationEventDeatilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BE29D219F8D5A000FDF96 /* ClassificationEventDeatilViewController.swift */; };
+		E16BE2A0219F96F8000FDF96 /* ClassificationEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BE29F219F96F8000FDF96 /* ClassificationEventTableViewCell.swift */; };
+		E16BE2A5219FA0FA000FDF96 /* ClassificationEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BE2A4219FA0F9000FDF96 /* ClassificationEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		E16BE27D219F77B2000FDF96 /* Field SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Field SurveyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16BE281219F77B2000FDF96 /* Field_SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_SurveyUITests.swift; sourceTree = "<group>"; };
 		E16BE283219F77B2000FDF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16BE290219F7E1E000FDF96 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		E16BE298219F8A30000FDF96 /* ClassificaitonEventLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificaitonEventLoader.swift; sourceTree = "<group>"; };
+		E16BE29A219F8CD5000FDF96 /* ClassificationEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationEventViewController.swift; sourceTree = "<group>"; };
+		E16BE29D219F8D5A000FDF96 /* ClassificationEventDeatilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationEventDeatilViewController.swift; sourceTree = "<group>"; };
+		E16BE29F219F96F8000FDF96 /* ClassificationEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationEventTableViewCell.swift; sourceTree = "<group>"; };
+		E16BE2A4219FA0F9000FDF96 /* ClassificationEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +107,15 @@
 		E16BE260219F77AF000FDF96 /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
-				E16BE261219F77AF000FDF96 /* AppDelegate.swift */,
+				E16BE28F219F7AD1000FDF96 /* Model */,
 				E16BE265219F77AF000FDF96 /* Main.storyboard */,
 				E16BE268219F77B2000FDF96 /* Assets.xcassets */,
 				E16BE26A219F77B2000FDF96 /* LaunchScreen.storyboard */,
 				E16BE26D219F77B2000FDF96 /* Info.plist */,
+				E16BE261219F77AF000FDF96 /* AppDelegate.swift */,
+				E16BE29F219F96F8000FDF96 /* ClassificationEventTableViewCell.swift */,
+				E16BE29A219F8CD5000FDF96 /* ClassificationEventViewController.swift */,
+				E16BE29D219F8D5A000FDF96 /* ClassificationEventDeatilViewController.swift */,
 			);
 			path = "Field Survey";
 			sourceTree = "<group>";
@@ -120,6 +136,16 @@
 				E16BE283219F77B2000FDF96 /* Info.plist */,
 			);
 			path = "Field SurveyUITests";
+			sourceTree = "<group>";
+		};
+		E16BE28F219F7AD1000FDF96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E16BE290219F7E1E000FDF96 /* field_observations.json */,
+				E16BE2A4219FA0F9000FDF96 /* ClassificationEvents.swift */,
+				E16BE298219F8A30000FDF96 /* ClassificaitonEventLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E16BE26C219F77B2000FDF96 /* LaunchScreen.storyboard in Resources */,
+				E16BE291219F7E1E000FDF96 /* field_observations.json in Resources */,
 				E16BE269219F77B2000FDF96 /* Assets.xcassets in Resources */,
 				E16BE267219F77AF000FDF96 /* Main.storyboard in Resources */,
 			);
@@ -254,6 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E16BE262219F77AF000FDF96 /* AppDelegate.swift in Sources */,
+				E16BE299219F8A30000FDF96 /* ClassificaitonEventLoader.swift in Sources */,
+				E16BE29B219F8CD5000FDF96 /* ClassificationEventViewController.swift in Sources */,
+				E16BE2A0219F96F8000FDF96 /* ClassificationEventTableViewCell.swift in Sources */,
+				E16BE29E219F8D5A000FDF96 /* ClassificationEventDeatilViewController.swift in Sources */,
+				E16BE2A5219FA0FA000FDF96 /* ClassificationEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
